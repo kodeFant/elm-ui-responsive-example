@@ -1,4 +1,4 @@
-module Types exposing (..)
+module Types exposing (Flags, Model, Msg(..))
 
 import Element exposing (Device)
 
@@ -8,7 +8,9 @@ type alias Model =
 
 
 type alias Flags =
-    { height : Int, width : Int }
+    { height : Int
+    , width : Int
+    }
 
 
 type Msg

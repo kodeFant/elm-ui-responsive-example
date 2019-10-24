@@ -1,4 +1,4 @@
-import { Elm } from './Main.elm'
+import { Elm } from './src/Main'
 
 Elm.Main.init({
     node: document.querySelector('main'),

@@ -2,8 +2,8 @@ module Main exposing (init, main, subscriptions, update)
 
 import Browser
 import Browser.Events as Events
-import Element exposing (Device, classifyDevice)
-import Http
+
+import Element exposing (classifyDevice)
 import Types exposing (Flags, Model, Msg(..))
 import View exposing (view)
 
@@ -41,7 +41,7 @@ init flags =
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
-update msg model =
+update msg _ =
     case msg of
         SetScreenSize x y ->
             let
@@ -59,5 +59,5 @@ update msg model =
 
 
 subscriptions : Model -> Sub Msg
-subscriptions model =
+subscriptions _ =
     Sub.batch [ Events.onResize (\values -> SetScreenSize values) ]

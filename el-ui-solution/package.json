@@ -1,0 +1,23 @@
+{
+  "name": "webpage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel index.html",
+    "ts-interop": "npx elm-typescript-interop",
+    "analyse": "npx elm-analyse",
+    "build": "parcel build index.html --out-dir build",
+    "serve": "yarn build && npx serve build"
+  },
+  "dependencies": {
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-asset-copier": "^1.0.0"
+  },
+  "devDependencies": {
+    "elm-hot": "^1.1.2",
+    "node-elm-compiler": "^5.0.4",
+    "typescript": "^3.6.4"
+  },
+  "assetsPath": "static"
+}
