@@ -5,8 +5,6 @@ https://package.elm-lang.org/packages/mdgriffith/elm-ui/latest/Element#responsiv
 
 This is a simple Parcel Project using TypeScript and Elm with the amazing [Elm UI library](https://package.elm-lang.org/packages/mdgriffith/elm-ui/latest/).
 
-Instead of using dedoders on JavaScript/TypeScript interop, I recommend [elm-typescript-interop](https://github.com/dillonkearns/elm-typescript-interop) for auto generating TypeScript types on Ports and Flags.
-
 Clone the project and navigate to the project folder then cd into the `elm-ui-solution` folder.
 
 ```bash
